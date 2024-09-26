@@ -16,8 +16,8 @@
 </head>
 <body>
 
-
-    <div class="navbar sticky top-0 z-50 bg-zinc-100 flex justify-center items-center lg:mx-auto  lg:justify-between lg:flex-row">
+  
+    <div class="navbar sticky top-0 z-50 bg-zinc-200  flex justify-center items-center lg:mx-auto  lg:justify-between lg:flex-row">
         <div class="navbar-start lg:ml-10">
          
           <a  href="./blog.html"  class="btn bg-lime-400  ">Blog</a>
@@ -36,12 +36,18 @@
         </div>
         
     </div>
+  
 
 <main  class="container mx-auto mt-8">
     <div class="flex justify-center items-center space-x-4 mb-4">
         <button  id="btn1"    class=" bg-lime-600 py-2 px-4 rounded-lg">Donation</button>
         <button id="btn2"   class=" border py-2 px-4 rounded-lg">History</button>
       </div>
+
+      <div id="historyContainer"  class="mt-4 hidden">
+        <h3 class=" text-xl font-bold my-3">Donation History:</h3>
+        <!-- Donation items will be appended here -->
+    </div>
 
       <section id="mainPart"  class="mt-9">
        
@@ -83,14 +89,14 @@
     <div class="mt-4">
         <button class=" bg-slate-100 py-2 px-6 rounded-lg flex items-center">
             <img src="./assets/coin.png"  class="mr-2" />
-          <span class="donation2">600</span>  BDT
+          <span id="donation2">600</span>  BDT
           </button>
       <h2 class="text-xl font-bold text-left mt-4">Donate for Flood Relief in Feni,Bangladesh</h2>
       <p class="mt-4 text-gray-600 text-left"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
       <input 
       type="text" 
-      placeholder="Write Donation Amount" 
-      class="border border-gray-300 py-2 px-4 rounded-lg  mt-4"id="input2"/>
+      placeholder="Write Donation Amount" id="input2"
+      class="border border-gray-300 py-2 px-4 rounded-lg  mt-4" />
       
     
       <button id="feni" class="bg-green-500 text-white py-2 px-6 rounded-lg flex items-center mt-4">
@@ -109,7 +115,7 @@
     <div class="mt-4">
         <button class=" bg-slate-100 py-2 px-6 rounded-lg flex items-center">
             <img src="./assets/coin.png"  class="mr-2" />
-          <span class="donation3"> 600</span> BDT
+          <span id="donation3"> 600</span> BDT
           </button>
       <h2 class="text-xl font-bold text-left mt-4">Aid for Injured in the Quota Movement</h2>
       <p class="mt-4 text-gray-600 text-left"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
