@@ -2,7 +2,7 @@
           const b1 = document.getElementById("btn1");
           const b2 = document.getElementById("btn2");
           
-          // Add event listeners and pass the function as a callback
+          // Add event listeners 
           b1.addEventListener("click", function() {
               change(b1, b2);
               document.getElementById("mainPart").classList.remove("hidden") ; 
